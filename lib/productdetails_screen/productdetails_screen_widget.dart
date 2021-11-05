@@ -1,4 +1,3 @@
-import '../flutter_flow/flutter_flow_drop_down.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
@@ -17,7 +16,6 @@ class ProductdetailsScreenWidget extends StatefulWidget {
 
 class _ProductdetailsScreenWidgetState
     extends State<ProductdetailsScreenWidget> {
-  String dropDownValue;
   bool _loadingButton = false;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -180,43 +178,6 @@ class _ProductdetailsScreenWidgetState
                         color: Color(0xFF8B97A2),
                         fontSize: 14,
                         fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 0),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(8, 0, 8, 0),
-                      child: FlutterFlowDropDown(
-                        options: ['Small', 'Medium', 'Large'].toList(),
-                        onChanged: (val) => setState(() => dropDownValue = val),
-                        width: 130,
-                        height: 50,
-                        textStyle: FlutterFlowTheme.bodyText1.override(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF090F13),
-                          fontSize: 16,
-                          fontWeight: FontWeight.normal,
-                        ),
-                        icon: Icon(
-                          Icons.arrow_drop_down_rounded,
-                          color: Color(0xFF95A1AC),
-                          size: 15,
-                        ),
-                        fillColor: Colors.white,
-                        elevation: 2,
-                        borderColor: Color(0xFFDBE2E7),
-                        borderWidth: 2,
-                        borderRadius: 8,
-                        margin: EdgeInsetsDirectional.fromSTEB(24, 4, 8, 4),
-                        hidesUnderline: true,
                       ),
                     ),
                   )
