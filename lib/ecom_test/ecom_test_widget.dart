@@ -522,15 +522,18 @@ class _EcomTestWidgetState extends State<EcomTestWidget> {
                                                 },
                                                 text: 'View All',
                                                 options: FFButtonOptions(
-                                                  width: 130,
-                                                  height: 40,
-                                                  color: Color(0x0000FFFF),
+                                                  width: 100,
+                                                  height: 30,
+                                                  color: FlutterFlowTheme
+                                                      .tertiaryColor,
                                                   textStyle: FlutterFlowTheme
                                                       .subtitle2
                                                       .override(
                                                     fontFamily: 'Poppins',
                                                     color: Color(0xFF827E7E),
+                                                    fontSize: 14,
                                                   ),
+                                                  elevation: 2,
                                                   borderSide: BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1,
